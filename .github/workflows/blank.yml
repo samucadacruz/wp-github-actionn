@@ -1,0 +1,21 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Test da Minha API
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  wp_textdomain_updater:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: WordPress Textdomain
+      uses: varunsridharan/action-wp-textdomain@2.0
+      with:
+        domain: '{your-text-domain}'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
