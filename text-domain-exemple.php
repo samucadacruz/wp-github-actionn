@@ -9,7 +9,7 @@
 * License: GPL2
 */
 
-add_action( 'o-titulo', 'text-domain-exemple' );
+add_action( 'o-titulo', 'https://api.api-futebol.com.br/v1/campeonatos?live_3153a265a5eb099e294c318806d717' );
 
 function text-domain-exemple() {
   _e( 'Helo World' );
